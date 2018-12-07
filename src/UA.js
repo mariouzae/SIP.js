@@ -223,6 +223,7 @@ UA.prototype.invite = function(target, options, modifiers) {
   // Delay sending actual invite until the next 'tick' if we are already
   // connected, so that API consumers can register to events fired by the
   // the session.
+  console.log("LALA");
   this.transport.afterConnected(function() {
     context.invite();
     this.emit('inviteSent', context);
