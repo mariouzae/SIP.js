@@ -11,6 +11,7 @@ module.exports = {
     },
     "extends": "eslint:recommended",
     "rules": {
+        "no-console": "off",
         "accessor-pairs": "error",
         "array-bracket-newline": "off",
         "array-bracket-spacing": [
